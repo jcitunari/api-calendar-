@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calendario de Eventos</title>
+
+        <!-- FullCalendar -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css"
+            rel="stylesheet" />
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+        <header class="header-container">
+            <h1>📅 Eventos JCI Tunari</h1>
+            <input type="text" id="search" placeholder="Buscar eventos..." />
+        </header>
+
+        <main class="container">
+            <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLa_Paz&showPrint=0&mode=WEEK&src=ODY5MTMzYmNhNWIyZmM0OGE0ODNlMDY1OWVlNWM4YTgzMTk1MmYxNzRhZjAyODE4NmZlY2ZlMGU3OTI2ZjAwNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5"
+                style="border-width:0" width="100%" height="600" frameborder="0"
+                scrolling="no"></iframe>
+            <!-- <div id="calendar"></div> -->
+        </main>
+
+        <!-- FullCalendar -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+        <!-- ICAL.js (OBLIGATORIO para .ics) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/ical.js@1.5.0/build/ical.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@fullcalendar/icalendar/index.global.min.js"></script>
+
+        <script src="app.js"></script>
+    </body>
+</html>

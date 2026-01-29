@@ -1,0 +1,92 @@
+/* Estilos básicos y responsive */
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#search {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 10px;
+    /* Ajuste más pequeño para móviles */
+    width: 100%;
+}
+
+#calendar {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+
+.fc-event.hidden {
+  display: none !important;
+}
+
+.fc-event.highlight {
+  background-color: #ffeb3b !important; /* Amarillo brillante */
+  color: #000 !important;
+  border-color: #fbc02d !important;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #search {
+        font-size: 14px;
+    }
+
+    /* Ajuste de calendario para móviles */
+    #calendar {
+        padding: 5px;
+    }
+
+    .fc-toolbar-chunk {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    .fc button {
+        font-size: 12px;
+        padding: 4px 6px;
+        margin-bottom: 3px;
+    }
+}
