@@ -79,5 +79,3 @@ Abre `index.html` en tu navegador directamente.
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia MIT.
-
-```

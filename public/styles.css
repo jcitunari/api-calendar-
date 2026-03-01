@@ -131,6 +131,11 @@ iframe {
   font-weight: bold;
 }
 
+.footer__text {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
 @media (max-width: 768px) {
   .logo img {
     max-width: 80px;
